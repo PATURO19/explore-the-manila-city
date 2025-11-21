@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizal Park - Discover Manila</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('rizalparkbackground.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: orange;
+      padding: 15px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+    }
+
+    header h1 {
+      margin: 0;
+      color:orange;
+      font-family: 'Times New Roman', serif;
+      cursor: pointer;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-family: 'Times New Roman', serif;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .page-title {
+      margin-top: 120px;
+      text-align: center;
+      font-size: 3em;
+      font-family: 'Times New Roman', serif;
+      text-shadow: 2px 2px 5px black;
+      color: #fff;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #ffcc66;
+      font-family: 'Merriweather', serif;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1em;
+      line-height: 1.6em;
+      text-align: justify;
+    }
+
+    .spot-box {
+      display: flex;
+      gap: 20px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      align-items: center;
+    }
+
+    .spot-box img {
+      width: 40%;
+      border-radius: 10px;
+    }
+
+    .spot-desc {
+      width: 60%;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 onclick="window.location.href='index.html'">Discover Manila</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="intramuros.html">Intramuros</a>
+      <a href="rizalpark.html">Rizal Park</a>
+      <a href="manilacathedral.html">Manila Cathedral</a>
+      <a href="museum.html">Museum</a>
+      <a href="manilabay.html">Manila Bay</a>
+    </nav>
+  </header>
+
+  <div class="page-title">Rizal Park</div>
+
+  <section>
+    <h2>National Symbol of Freedom</h2>
+    <p>
+      Rizal Park, also known as Luneta, is one of the most iconic landmarks in the Philippines. 
+      It is dedicated to Dr. José Rizal, the country’s national hero, whose execution here in 1896 
+      sparked the flames of revolution against Spanish rule.
+    </p>
+    <p>
+      Today, the park serves as a cultural and historical hub, attracting both locals and tourists 
+      who come to honor Rizal’s memory, enjoy open spaces, and witness national celebrations. 
+      Its gardens, monuments, and grand flag-raising ceremonies make it a symbol of Filipino pride.
+    </p>
+  </section>
+
+  <section>
+    <h2>Famous Spots in Rizal Park</h2>
+
+    <div class="spot-box">
+      <img src="rizalmonument.jpg" alt="Rizal Monument">
+      <div class="spot-desc">
+        <h3>Rizal Monument</h3>
+        <p>
+          The centerpiece of Rizal Park, honoring Dr. José Rizal with a bronze statue atop a granite pedestal. 
+          Surrounded by a ceremonial plaza, it is the site of many national events and celebrations.
+        </p>
+      </div>
+    </div>
+
+    <div class="spot-box">
+      <img src="japanesegarden.jpg" alt="Japanese Garden">
+      <div class="spot-desc">
+        <h3>Japanese Garden</h3>
+        <p>
+          A peaceful, beautifully landscaped garden featuring koi ponds, traditional Japanese bridges, 
+          and bonsai trees. It offers a serene escape in the heart of Manila.
+        </p>
+      </div>
+    </div>
+
+    <div class="spot-box">
+      <img src="auditorium.jpg" alt="Open-Air Auditorium">
+      <div class="spot-desc">
+        <h3>Open-Air Auditorium</h3>
+        <p>
+          A venue for cultural performances, concerts, and public gatherings, showcasing Filipino arts 
+          and music in a lively outdoor setting.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

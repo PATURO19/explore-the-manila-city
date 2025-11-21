@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url('manilacover.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+header {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  color: orange;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 95%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+nav a {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  text-decoration: none;
+  margin: 25px 25px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+.spacer { height: 70px; }
+
+.hero {
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  flex-direction: column;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+  scroll-margin-block: 10vh;
+}
+
+section h2 {
+  text-align: center;
+  color: #ffcc66;
+  font-family: 'Merriweather', serif;
+}
+
+.history-btn {
+  display: block;
+  margin: 30px auto 0px auto;
+  padding: 20px 45px;
+  background: orange;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 69px;
+  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6);
+  transition: all 0.3s ease;
+  text-align: center;
+  width: fit-content;
+}
+
+.history-btn:hover {
+  background: #ff8c00;
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(255, 140, 0, 0.9);
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.info-card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+}
+
+.info-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.info-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.info-card:hover .info-text {
+  opacity: 1;
+}
+
+.info-text h3 {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px black;
+}
+
+.info-text p {
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  text-shadow: 1px 1px 3px black;
+}
+
+footer {
+  background: #222;
+  color: orange;
+  text-align: center;
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: orange;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(255, 165, 0, 0.3);
+  cursor: pointer;
+  transition-duration: 0.2s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2000;
+}
+
+.svgIcon { width: 12px; transition-duration: 0.3s; }
+.svgIcon path { fill: white; }
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background-color: #ff8c00;
+}
+
+.button:hover .svgIcon {
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top?";
+  color: black;
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  bottom: unset;
+  transition-duration: 0.3s;
+}

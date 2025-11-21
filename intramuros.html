@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intramuros - Discover Manila</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('intramurosbackground.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      color: orange;
+      padding: 15px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+    }
+
+    header h1 a {
+      color: orange;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-family: 'Times New Roman', serif;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .page-title {
+      margin-top: 120px;
+      text-align: center;
+      font-size: 3em;
+      font-family: 'Times New Roman', serif;
+      text-shadow: 2px 2px 5px black;
+      color: #fff;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #ffcc66;
+      font-family: 'Merriweather', serif;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1em;
+      line-height: 1.6em;
+      text-align: justify;
+    }
+
+    .spot-box {
+      display: flex;
+      gap: 20px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      align-items: center;
+    }
+
+    .spot-box img {
+      width: 40%;
+      border-radius: 10px;
+    }
+
+    .spot-desc {
+      width: 60%;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html">Discover Manila</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="intramuros.html">Intramuros</a>
+      <a href="rizalpark.html">Rizal Park</a>
+      <a href="manilacathedral.html">Manila Cathedral</a>
+      <a href="museum.html">Museum</a>
+      <a href="manilabay.html">Manila Bay</a>
+    </nav>
+  </header>
+
+  <div class="page-title">Intramuros</div>
+
+  <section>
+    <h2>History of Intramuros</h2>
+    <p>
+      Intramuros, known as the Walled City, was the political and military center of Spanish Manila.
+      Built in the late 16th century, it served as the stronghold of Spanish authority and a safe refuge
+      during foreign invasions. Fort Santiago remains its most iconic structure, symbolizing centuries
+      of resilience.
+    </p>
+    <p>
+      Though greatly damaged during World War II, restoration efforts have brought new life to the
+      district. Today, Intramuros stands as a cultural and historical destination where visitors can
+      explore museums, churches, plazas, and centuries-old fortifications.
+    </p>
+  </section>
+
+  <section>
+    <h2>Famous Spots in Intramuros</h2>
+
+    <div class="spot-box">
+      <img src="fortsantiago.jpg" alt="Fort Santiago">
+      <div class="spot-desc">
+        <h3>Fort Santiago</h3>
+        <p>
+          One of the most important historical sites in the Philippines, Fort Santiago served as a
+          military defense fortress during the Spanish colonial period. It is most known as the
+          prison of Dr. José Rizal before his execution in 1896. Visitors can explore its dungeons,
+          gardens, and the iconic gate bearing the Spanish coat of arms.
+        </p>
+      </div>
+    </div>
+
+    <div class="spot-box">
+      <img src="sanagustinchurch.jpg" alt="San Agustin Church">
+      <div class="spot-desc">
+        <h3>San Agustin Church</h3>
+        <p>
+          San Agustin Church is the oldest stone church in the Philippines and a UNESCO World
+          Heritage Site. Built in 1607, it features baroque architecture, massive wooden doors, and
+          a stunning interior adorned with trompe-l'œil art. It remains one of the most iconic
+          religious structures inside Intramuros.
+        </p>
+      </div>
+    </div>
+
+    <div class="spot-box">
+      <img src="casamanila.jpg" alt="Casa Manila">
+      <div class="spot-desc">
+        <h3>Casa Manila</h3>
+        <p>
+          Casa Manila is a museum that showcases the lifestyle of wealthy Filipinos during the
+          Spanish colonial era. The house features intricate wooden furniture, period décor, and
+          beautifully preserved rooms that represent the opulence of 19th-century Manila.
+        </p>
+      </div>
+    </div>
+
+    <div class="spot-box">
+      <img src="plazamoriones.jpg" alt="Plaza Moriones">
+      <div class="spot-desc">
+        <h3>Plaza Moriones</h3>
+        <p>
+          Plaza Moriones serves as a refreshing open space along the walls of Fort Santiago. It is
+          known for its landscaped walkways, statues, and relaxing views. The plaza is an ideal spot
+          for leisurely strolls and photo opportunities before entering the fort.
+        </p>
+      </div>
+    </div>
+
+    <div class="spot-box">
+      <img src="baluarte.jpg" alt="Baluarte de San Diego">
+      <div class="spot-desc">
+        <h3>Baluarte de San Diego</h3>
+        <p>
+          Baluarte de San Diego is one of the oldest stone fortifications inside Intramuros. Originally
+          built as a watchtower in the 16th century, it now features circular gardens, stone walls, and
+          a scenic view of the surrounding areas. It is a peaceful historical site perfect for visitors
+          who enjoy photography and architecture.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manila Bay - Discover Manila</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('manilabaybackground.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+    }
+
+    header h1 a {
+      color: orange;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-family: 'Times New Roman', serif;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .page-title {
+      margin-top: 120px;
+      text-align: center;
+      font-size: 3em;
+      font-family: 'Times New Roman', serif;
+      text-shadow: 2px 2px 5px black;
+      color: #fff;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #ffcc66;
+      font-family: 'Merriweather', serif;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1em;
+      line-height: 1.6em;
+      text-align: justify;
+    }
+
+    .spot-box {
+      display: flex;
+      gap: 20px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      align-items: center;
+    }
+
+    .spot-box img {
+      width: 40%;
+      border-radius: 10px;
+    }
+
+    .spot-desc {
+      width: 60%;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html">Discover Manila</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="intramuros.html">Intramuros</a>
+      <a href="rizalpark.html">Rizal Park</a>
+      <a href="manilacathedral.html">Manila Cathedral</a>
+      <a href="museum.html">Museum</a>
+      <a href="manilabay.html">Manila Bay</a>
+    </nav>
+  </header>
+
+  <div class="page-title">Manila Bay</div>
+
+  <section>
+    <h2>The Famous Sunset</h2>
+    <p>
+      Manila Bay is world-renowned for its breathtaking sunsets, painting the horizon with vibrant 
+      hues of orange, pink, and purple. Locals and tourists alike gather along Roxas Boulevard to 
+      witness this daily spectacle.
+    </p>
+    <p>
+      Beyond its natural beauty, Manila Bay holds historical and cultural importance. It has been 
+      the site of significant naval battles and now serves as a lively hub for leisure, dining, and 
+      seaside activities, making it one of the most iconic spots in the city.
+    </p>
+  </section>
+
+  <section>
+    <h2>Famous Spots in Manila Bay</h2>
+
+    <div class="spot-box">
+      <img src="sunset.jpg" alt="Manila Bay Sunset">
+      <div class="spot-desc">
+        <h3>Sunset at Manila Bay</h3>
+        <p>The iconic view where the sun dips below the horizon, creating a spectacular mix of colors that draws photographers and tourists alike every evening.</p>
+      </div>
+    </div>
+
+    <div class="spot-box">
+      <img src="baywalk.jpg" alt="Baywalk">
+      <div class="spot-desc">
+        <h3>Baywalk</h3>
+        <p>A scenic promenade along Roxas Boulevard offering jogging paths, street food stalls, and a relaxing view of the bay, perfect for evening strolls.</p>
+      </div>
+    </div>
+
+    <div class="spot-box">
+      <img src="okadacasino.jpg" alt="Okada Manila">
+      <div class="spot-desc">
+        <h3>Okada Manila</h3>
+        <p>A luxurious resort and casino that offers world-class entertainment, fine dining, and an impressive fountain show visible from the bay.</p>
+      </div>
+    </div>
+
+    <div class="spot-box">
+      <img src="lightshow.jpg" alt="Night Light Show">
+      <div class="spot-desc">
+        <h3>Nighttime Light Show</h3>
+        <p>Manila Bay comes alive at night with colorful lights reflecting on the water, accompanied by musical fountain displays, creating a magical atmosphere for visitors.</p>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

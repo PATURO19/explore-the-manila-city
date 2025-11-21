@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manila Cathedral - Discover Manila</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('manilacathedralbackground.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: orange;
+      padding: 15px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+    }
+
+    header h1 {
+      margin: 0;
+      color: orange;
+      font-family: 'Times New Roman', serif;
+      cursor: pointer;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-family: 'Times New Roman', serif;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .page-title {
+      margin-top: 120px;
+      text-align: center;
+      font-size: 3em;
+      font-family: 'Times New Roman', serif;
+      text-shadow: 2px 2px 5px black;
+      color: #fff;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #ffcc66;
+      font-family: 'Merriweather', serif;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1em;
+      line-height: 1.6em;
+      text-align: justify;
+    }
+
+    .spot-box {
+      display: flex;
+      gap: 20px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      align-items: center;
+    }
+
+    .spot-box img {
+      width: 40%;
+      border-radius: 10px;
+    }
+
+    .spot-desc {
+      width: 60%;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 onclick="window.location.href='index.html'">Discover Manila</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="intramuros.html">Intramuros</a>
+      <a href="rizalpark.html">Rizal Park</a>
+      <a href="manilacathedral.html">Manila Cathedral</a>
+      <a href="museum.html">Museum</a>
+      <a href="manilabay.html">Manila Bay</a>
+    </nav>
+  </header>
+
+  <div class="page-title">Manila Cathedral</div>
+
+  <section>
+    <h2>The Premier Church of the Philippines</h2>
+    <p>
+      The Manila Cathedral, officially known as the Minor Basilica and Metropolitan Cathedral of the 
+      Immaculate Conception, is the mother church of the Philippines. Located within Intramuros, it has 
+      stood as a central place of faith since the 16th century.
+    </p>
+    <p>
+      Having been destroyed and rebuilt several times due to earthquakes and war, the present structure 
+      showcases Romanesque Revival architecture. Today, the Cathedral serves as a symbol of resilience 
+      and is the site of important religious ceremonies, including papal visits.
+    </p>
+  </section>
+
+  <section>
+    <h2>Famous Spots in Manila Cathedral</h2>
+
+    <div class="spot-box">
+      <img src="insidecathedral.jpg" alt="Inside Cathedral">
+      <div class="spot-desc">
+        <h3>Inside the Cathedral</h3>
+        <p>
+          The interior of Manila Cathedral features high vaulted ceilings, beautiful stained glass windows, 
+          and intricate architectural details that reflect its long history and religious significance.
+        </p>
+      </div>
+    </div>
+
+    <div class="spot-box">
+      <img src="cathedral.jpg" alt="Manila Cathedral Exterior">
+      <div class="spot-desc">
+        <h3>Cathedral Exterior</h3>
+        <p>
+          The majestic façade of Manila Cathedral welcomes visitors with its Romanesque arches, twin 
+          bell towers, and a grand entrance, symbolizing the strength and endurance of Filipino faith.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

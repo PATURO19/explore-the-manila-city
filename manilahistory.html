@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manila History</title>
+
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Merriweather', serif;
+      color: #fff;
+      background: #0a0a0a;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(6px);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: "Times New Roman", serif;
+      font-size: 1.8rem;
+    }
+
+    header h1 a {
+      text-decoration: none;
+      color: orange;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover { color: orange; }
+
+    .spacer { height: 80px; }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('History.jpg') no-repeat center center/cover;
+      position: relative;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero h2 {
+      position: relative;
+      font-size: 3.5rem;
+      text-shadow: 0 0 15px black;
+      color: orange;
+      animation: fadeIn 2s ease-in-out;
+      z-index: 1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      margin: 60px auto;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 50%;
+      width: 6px;
+      background: linear-gradient(to bottom, orange, #ff6600);
+      border-radius: 3px;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      width: 50%;
+      padding: 20px;
+      position: relative;
+      margin-bottom: 50px;
+      animation: slideUp 1s ease both;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
+
+    .content {
+      background: rgba(255, 165, 0, 0.08);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(255,165,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .content:hover { 
+      transform: scale(1.05); 
+      box-shadow: 0 0 25px orange;
+    }
+
+    .content h3 {
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      width: 20px; height: 20px;
+      background: orange;
+      border: 3px solid black;
+      border-radius: 50%;
+      z-index: 1;
+      box-shadow: 0 0 15px orange;
+    }
+
+    .timeline-item:nth-child(odd)::after {
+      right: -12px;
+    }
+
+    .timeline-item:nth-child(even)::after {
+      left: -12px;
+    }
+
+    /* Call to Action */
+    .cta {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(90deg, #ff6600, orange);
+      color: black;
+      border-radius: 20px;
+      margin: 60px auto;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 10px 30px rgba(255,165,0,0.4);
+    }
+
+    .cta h2 { font-size: 2rem; margin-bottom: 20px; font-family: "Times New Roman", serif; }
+    .cta a {
+      display: inline-block;
+      padding: 12px 30px;
+      background: black;
+      color: orange;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .cta a:hover { background: #222; color: #ff6600; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: black;
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html" style="color:orange; text-decoration:none;">Discover Manila</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#attractions">Attractions</a>
+      <a href="ManilaHistory.html">History</a>
+    </nav>
+  </header>
+
+  <div class="spacer"></div>
+
+  <!-- HERO with History.jpg -->
+  <section class="hero">
+    <h2>The Untold Story of Manila</h2>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline">
+    <div class="timeline-item">
+      <div class="content">
+        <h3>🏝 Pre-Colonial Era</h3>
+        <p>Before the Spaniards arrived, Manila was already a thriving community of traders and fishermen. The city was known as Maynilad, named after the flowering plant “nilad” that grew along the Pasig River. Local rulers called datus governed the land, and trade with Chinese, Indian, and Arab merchants was very active. People used boats called balangays for travel and trade, showing how advanced their way of life was.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h3>⛪ Spanish Colonization (1571)</h3>
+        <p>When Ferdinand Magellan arrived in 1521 and Miguel López de Legazpi established Spanish rule in 1571, Manila became the capital of the Spanish East Indies. The Spaniards built Intramuros, the walled city, which became the center of religion, government, and education. Manila became part of the galleon trade, where goods like silk, spices, and silver were exchanged between the Philippines and Mexico. However, the people also faced hardships like forced labor (polo y servicio) and revolts against colonial rule.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h3>US American Period (1898–1946)</h3>
+        <p>After Spain lost the Spanish-American War, the Philippines was handed over to the United States in 1898. Manila was modernized with new schools, hospitals, and infrastructure. The Americans introduced English as the main language of education, and the city became a showcase of Western culture. However, Filipinos continued their struggle for independence. In 1941, during World War II, Manila was heavily bombed by Japanese forces, which led to widespread destruction.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h3>⚔️ World War II</h3>
+        <p>During World War II, Manila fell under Japanese control. The occupation brought fear, poverty, and violence to the city. The Battle of Manila in 1945 was one of the bloodiest in history, leading to the destruction of most of the city and the death of thousands of civilians. Despite this, the bravery of Filipino and American soldiers led to the liberation of Manila and eventually the whole country.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h3>🌆 Modern Manila</h3>
+        <p>On July 4, 1946, the Philippines finally gained full independence, and Manila was chosen as the capital of the free nation. The city slowly rebuilt itself from the ruins of war. Through the years, it became a mix of modern skyscrapers, shopping centers, and historical landmarks. Today, Manila is not only the political center of the Philippines but also a cultural hub, reflecting the resilience and spirit of the Filipino people.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta">
+    <h2>Want to Discover More About Manila?</h2>
+    <a href="index.html#culture">Explore Culture</a>
+  </section>
+
+</body>
+</html>

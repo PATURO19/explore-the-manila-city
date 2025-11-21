@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum of Fine Arts - Discover Manila</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('museumbackground.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: orange;
+      padding: 15px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+    }
+
+    header h1 {
+      margin: 0;
+      color: orange;
+      font-family: 'Times New Roman', serif;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-family: 'Times New Roman', serif;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .page-title {
+      margin-top: 120px;
+      text-align: center;
+      font-size: 3em;
+      font-family: 'Times New Roman', serif;
+      text-shadow: 2px 2px 5px black;
+      color: #fff;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #ffcc66;
+      font-family: 'Merriweather', serif;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1em;
+      line-height: 1.6em;
+      text-align: justify;
+    }
+
+    .art-box {
+      display: flex;
+      gap: 20px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      align-items: center;
+    }
+
+    .art-box img {
+      width: 40%;
+      border-radius: 10px;
+    }
+
+    .art-desc {
+      width: 60%;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html" style="text-decoration:none; color:inherit;">Discover Manila</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="intramuros.html">Intramuros</a>
+      <a href="rizalpark.html">Rizal Park</a>
+      <a href="manilacathedral.html">Manila Cathedral</a>
+      <a href="museum.html">Museum</a>
+      <a href="manilabay.html">Manila Bay</a>
+    </nav>
+  </header>
+
+  <div class="page-title">Museum of Fine Arts</div>
+
+  <section>
+    <h2>Philippine Art Masterpieces</h2>
+    <p>
+      The National Museum of Fine Arts houses iconic Filipino artworks, including Juan Luna’s 
+      <em>Spoliarium</em>. It features a vast collection of paintings, sculptures, and historical art 
+      pieces that showcase the evolution of Philippine art through the centuries.
+    </p>
+  </section>
+
+  <section>
+    <div class="art-box">
+      <img src="spoliarium.jpg" alt="Spoliarium">
+      <div class="art-desc">
+        <h3>Spoliarium</h3>
+        <p>Juan Luna’s monumental masterpiece depicting fallen gladiators, symbolizing struggle and heroism.</p>
+      </div>
+    </div>
+
+    <div class="art-box">
+      <img src="parisian.jpg" alt="The Parisian Life">
+      <div class="art-desc">
+        <h3>The Parisian Life</h3>
+        <p>Juan Luna’s painting portraying the charm of European society and his early artistic influence.</p>
+      </div>
+    </div>
+
+    <div class="art-box">
+      <img src="josephine.jpg" alt="Josephine">
+      <div class="art-desc">
+        <h3>Josephine</h3>
+        <p>A notable portrait highlighting delicate expression and technique from Filipino colonial-era art.</p>
+      </div>
+    </div>
+
+    <div class="art-box">
+      <img src="colonial.jpg" alt="Colonial Era Painting">
+      <div class="art-desc">
+        <h3>Colonial Era Paintings</h3>
+        <p>Depictions of life in the Philippines during Spanish colonial rule, showcasing culture and daily life.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
+

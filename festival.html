@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festivals - Discover Manila</title>
+
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Merriweather', serif;
+      color: #fff;
+      background: #0a0a0a;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(6px);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: "Times New Roman", serif;
+      font-size: 1.8rem;
+      color: orange;
+    }
+
+    header h1 a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover { color: orange; }
+
+    .spacer { height: 80px; }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('festivalbackground.jpg') no-repeat center center/cover;
+      position: relative;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero h2 {
+      position: relative;
+      font-size: 3.5rem;
+      text-shadow: 0 0 15px black;
+      color: orange;
+      animation: fadeIn 2s ease-in-out;
+      z-index: 1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Timeline-style Cards */
+    .festival-section {
+      position: relative;
+      margin: 60px auto;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .festival-item {
+      width: 100%;
+      padding: 20px;
+      position: relative;
+      margin-bottom: 50px;
+      animation: slideUp 1s ease both;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .festival-item .content {
+      background: rgba(255, 165, 0, 0.08);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(255,165,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .festival-item .content:hover { 
+      transform: scale(1.05); 
+      box-shadow: 0 0 25px orange;
+    }
+
+    .festival-item .content img {
+      width: 40%;
+      border-radius: 10px;
+    }
+
+    .festival-item .content div {
+      width: 60%;
+    }
+
+    .festival-item .content h3 {
+      color: orange;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html">Discover Manila</a></h1>
+    <nav>
+      <a href="festival.html">Festivals</a>
+      <a href="transportation.html">Transportation</a>
+    </nav>
+  </header>
+
+  <div class="spacer"></div>
+
+  <section class="hero">
+    <h2>Manila Festivals</h2>
+  </section>
+
+  <section class="festival-section">
+    <div class="festival-item">
+      <div class="content">
+        <img src="blacknazarene.jpg" alt="Feast of Black Nazarene">
+        <div>
+          <h3>Feast of the Black Nazarene</h3>
+          <p>A massive religious procession held every January in Quiapo, attracting millions of devotees in a vibrant display of faith.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="festival-item">
+      <div class="content">
+        <img src="filmfestival.jpg" alt="International Film Festival">
+        <div>
+          <h3>Manila International Film Festival</h3>
+          <p>A celebration of cinematic art, featuring local and international films, red carpet events, and screenings at iconic venues.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="festival-item">
+      <div class="content">
+        <img src="parade.jpg" alt="Cultural Parade / Arts Festival">
+        <div>
+          <h3>Cultural Parade / Arts Festival</h3>
+          <p>An annual parade highlighting Filipino arts, crafts, traditional dances, and street performances that showcase the country’s rich heritage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
